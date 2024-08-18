@@ -1,9 +1,10 @@
-while True:
-  answer = int(input('When was python 1.0 released' ))
-  if answer > 1994:
-    print('it was earlier than that!')
-  elif answer < 1994:
-    print('it was later than that!')
-  else:
-    print('Correct')
-    break
+answer_a = int(input('Try to guess the first number: '))
+ 
+if answer_a == 8:
+    answer_b = int(input('Correct! Now, guess the second number: '))
+    if answer_b == 5:
+        print('You won!')
+    else:
+        print('You only got one number right. So close!')
+else:
+    print('Wrong!')
